@@ -1,0 +1,36 @@
+.check-item {
+  padding: 0.5em;
+}
+
+.item-name {
+  flex-grow: 2;
+  cursor: pointer;
+  color: #172b4d;
+}
+
+form {
+  flex-grow: 2;
+}
+
+.close-cI {
+  cursor: pointer;
+}
+
+label {
+  font-size: 18px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.check-item:hover {
+  background-color: rgb(9, 30, 66, 0.04);
+}
+
+.close-cI {
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.check-item:hover .close-cI {
+  visibility: visible;
+}

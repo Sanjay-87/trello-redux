@@ -1,0 +1,34 @@
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #f4f5f7;
+  padding: 10px;
+  width: 768px;
+}
+
+.header {
+  padding: 0.5em;
+  font-size: 24px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #172b4d;
+}
+
+.m-container input {
+  margin-top: 10px;
+}
+
+.m-container {
+  margin: 0px 13px 5px 13px;
+}
+
+.close-m {
+  cursor: pointer;
+}
