@@ -6,6 +6,10 @@
   font-weight: 500;
 }
 
+.card-body:hover {
+  background-color: rgba(9, 30, 66, 0.089);
+}
+
 .close {
   cursor: pointer;
   visibility: hidden;
