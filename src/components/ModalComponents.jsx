@@ -6,6 +6,7 @@ import {
   fetchCheckLists,
   addCheckList,
   deleteCheckList,
+  resetState,
 } from '../actions/checklistActions';
 
 export class ModalComponents extends Component {
@@ -15,6 +16,10 @@ export class ModalComponents extends Component {
 
   componentDidMount() {
     this.props.fetchCheckLists(this.props.id);
+  }
+
+  componentWillUnmount() {
+    this.props.resetState();
   }
 
   del = (id) => {
@@ -87,6 +92,7 @@ const mapDispatchToProps = {
   fetchCheckLists,
   addCheckList,
   deleteCheckList,
+  resetState,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ModalComponents);

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import List from './List';
 import PropTypes from 'prop-types';
-import { fetchLists, addList } from '../actions/listActions';
+import { fetchLists, addList, resetState } from '../actions/listActions';
 import { fetchCards } from '../actions/cardActions';
 import Header from './Header';
 import TextInput from './TextInput';
@@ -20,6 +20,10 @@ export class Board extends Component {
   componentDidMount() {
     let boardId = this.props.match.params.boardId;
     this.props.fetchLists(boardId);
+  }
+
+  componentWillUnmount() {
+    this.props.resetState();
   }
 
   handleClick = () => {
@@ -115,6 +119,6 @@ const mapStateToProps = (state) => ({
   lists: state.lists.items,
 });
 
-const mapDispatchToProps = { fetchLists, addList, fetchCards };
+const mapDispatchToProps = { fetchLists, addList, fetchCards, resetState };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Board);

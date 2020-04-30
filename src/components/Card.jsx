@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Modal from 'react-bootstrap/Modal';
 import ModalComponent from './ModalComponents';
-import { resetState } from '../actions/checklistActions';
 import '../css/Card.css';
 
 class Card extends Component {
@@ -13,7 +12,6 @@ class Card extends Component {
 
   handleClose = () => {
     this.setState({ setShow: false, show: false });
-    this.props.resetState();
   };
 
   handleShow = () => {
@@ -47,6 +45,6 @@ class Card extends Component {
 
 const mapStateToProps = (state) => ({});
 
-const mapDispatchToProps = { resetState };
+const mapDispatchToProps = {};
 
 export default connect(mapStateToProps, mapDispatchToProps)(Card);
