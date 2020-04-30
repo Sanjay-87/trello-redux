@@ -25,4 +25,4 @@ export const UPDATE_CHECKITEM_NAME = 'UPDATE_CHECKITEM_NAME';
 
 //---------Reset Actions
 export const RESET_LIST = 'RESET_LIST';
-export const RESET_CHECKLIST = 'RESER_CHECKLIST';
+export const RESET_CHECKLIST = 'RESET_CHECKLIST';

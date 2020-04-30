@@ -6,10 +6,6 @@ import {
   UPDATE_CHECKITEM_NAME,
 } from './types';
 
-// const key = `bed715afda8e811a4276182ca183e3b0`;
-// const token =
-//   '55b8bcaf396fd0b49537b2f24e39f580510fcea6a648a53a958af4f43330de85';
-
 const key = localStorage.getItem('key');
 const token = localStorage.getItem('token');
 
